@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Change Printer Pin And Name"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+
+            android:layout_weight="1"
+            android:hint="Enter Name"
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/printerName"
+            android:text="Name"
+            android:onClick="printerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            android:hint="Pin"
+            android:id="@+id/edtPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/pin"
+            android:onClick="pin"
+            android:text="Pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:text="Secure Mode On"
+        android:onClick="secureModeOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Secure Mode Off"
+        android:onClick="secureModeOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/pairing"
+        android:text="Connect"
+        android:onClick="onShowPairedPrinters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bill"
+        android:text="Print A bill"
+        android:onClick="onPrintBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+<!--
+    <Button
+        android:id="@+id/bill_cutterPrinter"
+        android:text="Cutter printer bill"
+        android:onClick="onCutterBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+-->
+
+
+   <!-- <Button
+        android:id="@+id/bill_fullCutter"
+        android:text="HalfCutter"
+        android:onClick="onHalfCutterBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bill_halfCutter"
+        android:text="FullCutter"
+        android:onClick="onFullCutterBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+
+</LinearLayout>
